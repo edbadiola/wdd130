@@ -1,0 +1,105 @@
+:root {
+    --primary-color: #0D160B; /* Night */
+    --secondary-color: #F6511D; /* Tangelo */
+    --accent1-color: #FFB400; /* Selective Yellow */
+    --accent2-color: #00A6ED; /* Picton Blue */
+    --background-color: #f3f4f6;  
+    --text-color: #070707; /* Dark gray/black for readability */
+}
+
+/* General body styling */
+body {
+    font-family: 'Roboto', sans-serif; /* Text font */
+    text-align: center;
+    color: var(--background-color);
+    background-color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Navigation */
+nav {
+    background-color: var(--secondary-color);
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav a {
+    color: var(--primary-color);
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: var(--accent1-color);
+}
+
+/* Hero section */
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Headings */
+h1 {
+    font-family: 'Chango';  
+    text-align: center;
+    font-size: 5rem;
+    color: var(--secondary-color);
+    margin: 20px 0;
+}
+
+h2 {
+    font-family:'Chango';  
+    font-size: 2rem;
+    color: var(--secondary-color);
+    margin: 20px 0 10px;
+    text-align: center;
+}
+
+/* Article styling */
+article {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 15px;
+    background-color: color: var(--secondary-color);
+    border-radius: 8px;
+}
+
+article img {
+    float: right;
+    margin: 0 0 10px 15px;
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
+}
+
+section img {
+    display: block;
+    padding: 10px;
+    width: 800px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+/* Social media icons */
+.sociallinks a img {
+    width: 40px;
+    height: auto;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: var(--primary-color);
+    color: var(--accent1-color);
+}
