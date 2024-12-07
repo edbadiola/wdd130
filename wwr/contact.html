@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viwport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us Page</title>
+    <meta name="description"
+        content="This page will include contact information and a contact form which the user can submit to ask questions about the company and its services.">
+    <meta name="author" content="Ed Badiola">
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+
+<body>
+    <header>
+        <img class="logo_img" src="images/logo.png" alt="Whitewater Rafting logo">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contacts.html">Contacts</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <div class="contact-hero">
+            <img src="images/rafting4.jpg" alt=" Background Image">
+            <h1>Get in touch with us!</h1>
+        </div>
+
+        <section class="contact-information">
+            <div class="text">
+                <h3>Whitewater Rafting Adventure</h3>
+                <p>Address: 123 Riverbank Road, Cascade City, CO 80435</p>
+                <p>Office: (555) 123-4567</p>
+                <p>Reservation: (555) 987-6543</p>
+                <p>Email: bookings@whitewaterrafting.com</p>
+            </div>
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3257.3993094134094!2d-81.00822908839693!3d35.271197072608516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8856bd20e3f7debd%3A0x9f98f6c378221e22!2sU.S.%20National%20Whitewater%20Center!5e0!3m2!1sen!2sph!4v1733584078669!5m2!1sen!2sph"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </section>
+
+
+        <section class="team-section">
+            <h1>Meet our team</h1>
+            <figure class="team">
+                <figure>
+                    <img src="images/emp1 (1).jpg" alt="Cassie Jones" class="employee1">
+                    <figcaption>Cassie Jones - CEO</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/emp1 (2).jpg" alt="Jean Marie" class="employee2">
+                    <figcaption>Jean Marie - Customer Service</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/emp1 (3).jpg" alt="Tuesday Halle" class="employee3">
+                    <figcaption>Tuesday Halle - Management</figcaption>
+                </figure>
+
+            </figure>
+        </section>
+
+        <section class="message">
+        <h3>Message us!</h3>
+        <p>We will respond within 24 hours.</p>
+        <form action="/submit_contact" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required=""><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required=""><br>
+            <input type="radio" id="general" name="purpose" value="General Inquiry" required="">
+            <label for="general">General Inquiry</label><br>
+            <input type="radio" id="reservation" name="purpose" value="Reservation Question" required="">
+            <label for="reservation">Reservation Question</label><br>
+            <input type="radio" id="suggestion" name="purpose" value="Website Suggestion" required="">
+            <label for="suggestion">Website Suggestion</label><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" required=""></textarea><br>
+            <input type="checkbox" id="subscribe" name="subscribe">
+            <label for="subscribe">Please subscribe me to the monthly newsletter</label><br>
+            <button type="submit">Send</button>
+        </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 | Whitewater Rafting | Edward Kenneth Badiola </p>
+        <nav class="sociallinks">
+            <a href="https://facebook.com">
+                <img src="images/facebook.webp" alt="Facebook">
+            </a>
+            <a href="https://twitter.com">
+                <img src="images/mesenger.webp" alt="Messenger">
+            </a>
+            <a href="https://facebook-messenger">
+                <img src="images/facebook-messenger.webp" alt="Facebook Messenger">
+            </a>
+        </nav>
+    </footer>
+
+</body>
+
+</html>
