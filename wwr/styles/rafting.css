@@ -230,8 +230,7 @@ header nav a {
 }
 
 .message button {
-    background-color: #007BFF; /* Blue background */
-    color: white;  
+    background-color: #007BFF;  
     border: none;
     padding: 10px 20px;
     border-radius: 4px;  
@@ -240,52 +239,48 @@ header nav a {
 }
 
 .message button:hover {
-    background-color: #0056b3; /* Darker blue on hover */
+    background-color: #0056b3;  
 }
 
 
 .history_section {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    align-items: center;
+    align-items: start; 
     justify-content: space-evenly;
     justify-items: center;
     max-width: auto;
-    padding: 0;
     column-gap: 10px;
+    row-gap: 50px; 
     background-color: black;
 }
 
 .history_section h2 {
     grid-column: 1 / span 5;
     text-align: center;
-    padding-top: 80px;
     font-size: 3.5em;
     color: #ffffff;
-    font-weight: 200;
-    
-    
+    margin: 0;  
+    padding: 0; 
+    margin-top: 120px; 
 }
 
 .history_section p {
     grid-row: 2 / span 1;
-    align-self: self-start;
+    align-self: start;
     color: #ffffff;
-    padding: 40px;
+    padding: 0 40px;  
+    margin: 0;  
     line-height: 1.5;
     text-align: left;
-    
 }
 
 .history_section_p1 {
     grid-column: 1 / span 2;
-    
-    
 }
 
 .history_section_p2 {
     grid-column: 4 / span 2;
-  
 }
 
 .history_section img {
@@ -294,8 +289,6 @@ header nav a {
     margin: 0;
     padding: 0;
     width: 400px;
-    
-    
 }
 
 .adventure_section {
@@ -317,7 +310,7 @@ header nav a {
     padding-top: 80px;
     font-size: 3.5em;
     color: #ffffff;
-    font-weight: 200;
+    
     
 }
 .adventure_section figure {
@@ -374,7 +367,7 @@ p {
     text-decoration: none;
 }
 
-/* Footer */
+
 footer {
     text-align: center;
     padding: 10px 0;
@@ -382,3 +375,116 @@ footer {
     color: black;
     font-weight: 500;
 }
+
+
+/* Home Page */
+
+.home_hero {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.home_hero img {
+    display: block;
+    width: 100%;
+    height: auto;    
+}
+
+.home_hero h1 {
+    font-style: italic;
+    font-size: 7em;
+    text-align: center;
+    font-weight: bold;
+    position: absolute;
+    top: 100px;
+    width: 100%;
+    color: rgb(255, 255, 255);
+}
+
+.newsletter {
+    text-align: center;
+    padding: 50px;
+    background-color: var(--accent2-color);
+    color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+.newsletter form {
+    display: inline-block;
+    text-align: left;
+}
+
+.newsletter form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.newsletter form input {
+    display: block;
+    margin-bottom: 10px;
+    padding: 8px;
+    width: 300px;
+}
+
+.newsletter form button {
+    padding: 10px 20px;
+}
+
+.calltoaction {
+    text-align: center;
+    padding: 20px;
+    background-color: black;
+    color: #ffffff;
+}
+
+.calltoaction h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    margin-top: 90px;
+}
+
+.adventure-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    background-color: black;
+}
+
+.adventure-figure {
+    position: relative;
+    text-align: center;
+    border: 20px solid var(--accent2-color);
+    border-radius: 5px;
+    background-color: var(--accent2-color);
+}
+
+.adventure-figure img {
+    width: 100%;
+    height: auto;
+    
+}
+
+.adventure-figure .cta-button {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    background-color: rgb(40, 63, 167);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.adventure-figure .cta-button:hover {
+    background-color: rgb(40, 63, 167);
+}
+
+
